@@ -38,10 +38,16 @@ p{color: #2F4F4F;}
  }
  form button{
     background-color:Aliceblue;
-    margin:0px auto 10px auto;
+    margin:0px auto 10px 10px;
     border-radius:10px;
     border:0;
     height:30px;
     width:50px;
     padding:5px 10px;
+    color:#778899;
  }         
+a{
+  text-decoration:none;
+  margin:0px auto 10px 120px;
+  color: #778899;
+}
