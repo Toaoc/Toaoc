@@ -1,0 +1,47 @@
+body
+{ 
+background-image: url(http://files.57gif.com/webgif/0/0/8d/a6f8b86fb259bbc7362e378a11d17.gif); 
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-size:cover;
+}
+h1{
+	font-family: "楷体";
+	font-size: 50px;
+	font-weight: 3px;
+	color: grey;
+	text-align: center;
+}
+
+
+form{
+	width:300px;
+	height:160px;
+	position:relative;
+   	left:50%;
+  	top:50%;
+  	margin-left:-150px;
+  	margin-top:-30px;
+		
+}
+
+p{color: #2F4F4F;}
+ form input{
+ 	border:1px solid white;
+ 	display:block;
+ 	margin:0px auto 10px auto;
+ 	padding:10px;
+ 	width:220px;
+ 	border-radius:30px;
+ 	font-size:18px;
+ 	font-weight:300;
+ }
+ form button{
+    background-color:Aliceblue;
+    margin:0px auto 10px auto;
+    border-radius:10px;
+    border:0;
+    height:30px;
+    width:50px;
+    padding:5px 10px;
+ }         
