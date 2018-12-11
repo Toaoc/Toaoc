@@ -1,0 +1,28 @@
+#include<stdio.h>
+void com(int *p, int *q);
+int main(void)
+{
+	int a[10], i, j, k;
+	int *p, *q;
+	scanf_s("%d%d%d%d%d%d%d%d%d%d", &a[0], &a[1], &a[2], &a[3], &a[4], &a[5], &a[6], &a[7], &a[8], &a[9]);
+	for (i = 10; i != 0; i--)
+	{
+		for (j = 1,p=a; j < i; j++, p++)
+		{
+			q = p + 1;
+			com(p, q);
+		}
+	}
+	for (i = 0; i < 10; i++)
+		printf("%d\n", a[i]);
+}
+void com(int *p, int *q)
+{
+	int t;
+	if (*p > *q)
+	{
+		t = *p;
+		*p = *q;
+		*q = t;
+	}
+}
