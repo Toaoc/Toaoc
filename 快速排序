@@ -1,0 +1,49 @@
+#include<stdio.h>
+void ksort(int a[], int left, int right);
+int main(void)
+{
+	int a[5], i ;
+	for (i = 0; i < 5; i++)
+		scanf("%d", &a[i]);
+	ksort(a, 0, 4);
+	for (i = 0; i < 5; i++)
+		printf("%d\t", a[i]);
+	return 0;
+}
+void ksort(int a[], int left, int right)
+{
+	if (left >= right)
+		return;
+	int i, j, k, t;
+	i = left;
+	j = right;
+	k = a[left];
+	while (left < right)
+	{
+		while (right > left&&a[right] > k)
+		{
+			right--;
+		}
+		if (right > left)
+		{
+			t = a[left];
+			a[left] = a[right];
+			a[right] = t;
+			left++;
+		}
+		while (left < right&&a[left] < k)
+		{
+			left++;
+		}
+		if (left < right)
+		{
+			t = a[left];
+			a[left] = a[right];
+			a[right] = t;
+			right--;
+		}
+	}
+	printf("%d\t%d\n", i, j);
+	ksort(a, i, left - 1);
+	ksort(a, right+1, j);
+} 
