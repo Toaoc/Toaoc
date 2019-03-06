@@ -1,0 +1,61 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+char *s_gets(char*st, int n);
+typedef struct book {
+	char author[45];
+	char name[45];
+	struct book *next;
+}book;
+int main(void)
+{
+	book *head;
+	book *current=NULL;
+	book *prev=NULL;
+	char input[45];
+	head = NULL;
+	printf("请输入书籍名称：\n");
+	while (s_gets(input, 45) != NULL && input[0] != '\0')
+	{
+		current = (book*)malloc(sizeof(book));
+		if (head == NULL)
+			head = current;
+		else
+			prev->next = current;
+		strcpy(current->name, input);
+		printf("请输入作者：\n");
+		gets(current->author);
+		
+		printf("请输入书籍名称（空行结束输入）：\n");
+		prev = current;
+	}
+	current->next = NULL;
+	current = head;
+	printf("\t\t书名\t\t作者\n");
+	while (current != NULL)
+	{
+		printf("\t\t %s\t\t%s\n", current->name, current->author);
+		current = current->next;
+	}
+	current = head;
+	while (current!=NULL)
+	{
+		head = current->next;
+		free(current);
+		current = head;
+	}
+	return 0;
+}
+char *s_gets(char*st, int n)
+{
+	char *re;
+	char *find;
+	re = fgets(st, n, stdin);
+	if (re)
+	{
+		find = strchr(st,'\n');
+		if (find)
+			*find = '\0';
+	}
+	return re;
+}
