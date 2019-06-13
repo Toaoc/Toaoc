@@ -1,1 +1,200 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><sp:property value="#columns[0].title"/></title>
+    <style type="text/css">
+        a{
+            text-decoration: none;
+            color:blue;
+        }
+        a:hover{
+            text-decoration: underline;
+            color:#F80000;
+        }
+        body{
+            background-image:url("<sp:property value='resourceUri'/>/apollo11.jpg");
+            background-size:cover;
+            background-attachment:fixed;
+        }
+        .nav{
+            position:fixed;
+            top:0;
+            margin-right:1%;
+            width:99%;
+            height: 50px;
+            z-index:10;
+            background-color: lightsteelblue;
+        }
+        .dao{
+            position:absolute;
+            bottom:0;
+            overflow: hidden;
+        }
+        .cai{
+            height:25px;
+            list-style-type: none;
+        }
+        .cai>li{
+            margin-left:100px;
+            font-size:1.5em;
+            font-weight:700;
+            color:black;
+            display:inline;
+        }
+        .menu{
+            margin-left:100px;
+        }
+        .pic{
+            margin-top:55px;
+            margin-left:15%;
+            margin-right:30px;
+            height: 300px;
+            width:70%;
+        }
+        img{
+            display:inline-block;
+            border-radius:30px 0 0 30px;
+            height:100%;
+            width:50%;
+        }
+        .title{
+            float:right;
+            width:50%;
+            height:100%;
+            border-radius:0 30px 30px 0;
+            background-color:gray;
+            filter:alpha(opacity=70);
+            -moz-opacity: 0.7;
+            opacity: 0.7;
+            overflow:hidden;
+        }
+        .title>a>p{
+            margin-right:7%;
+            margin-left:7%;
+        }
+        .section{
+            position:relative;
+            margin-top:30px;
+            margin-left:15%;
+            margin-right:15%;
+            border-radius:30px;
+            background-color:gray;
+            width:70%;
+            filter:alpha(opacity=70);
+            -moz-opacity: 0.7;
+            opacity: 0.7;
+        }
+        .text{
+            font-weight:bold;
+        }
+        .explain{
+            margin-right:5%;
+            color:black;
+            font-weight:bold;
+        }
+        .footer{
+            display:inline-block;
+            width:99.5%;
+            text-align: center;
+            margin-top:30px;
+            height: 50px;
+            background-color:lightsteelblue;
+            filter:alpha(opacity=60);
+            -moz-opacity: 0.6;
+            opacity: 0.6;
+            overflow:hidden;
+        }    </style>
+</head>
+<body>
+<div>
+    <div class="nav">
+        <div class="dao">
+            <ul class="cai">
+                <li class="menu0">
+                    <a href="list7202.html">??????/a>
+                </li>
+                <li class="menu">
+                    <a href="list7200.html">?????</a>
+                </li>
+                <li class="menu">
+                    <a href="list7206.html">??????/a>
+                </li>
+                <li class="menu">
+                    <a href="list7204.html">??̫?ϵ</a>
+                </li>
+                <li class="menu">
+                    <a href="list7208.html">????</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pic">
+        <img src="http://img.univs.cn/<sp:property value="titleImg"/>" alt="" align="top">
+        <div class="title">
+            <a href="" class="text">
+                <p><a href="<sp:property value="pageUri"/>/<sp:iterator value="specialData.articleList(1,0).publishUri"/>">
+ <sp:property value="specialData.articleList(1,0).title"/> </a> </p>
+                <p class="explain"><sp:iterator value="specialData.articleList(1,0).newsAbstract"/></p>
+            </a>
+        </div>
+    </div>
+    <div class="list">
+        <div class="section">
+            <ul >
+                <li class="article">
+                    <p><sp:iterator value="specialData.articleList(1,1)"></p>  
+                    <p class="explain"><a href="<sp:property value='pageUri'/>/<sp:property value='publishUri'/>" title=" <sp:property value='title'/>" > <sp:property value="disUtil.subString(title,100,'..')"/> </a>  <sp:property value="disUtil.formatDate(staticTime,'yy-MM-dd hh:mm')"/> 
+                    </p>
+                    </sp:iterator> 
+                </li>
+                <li class="article">
+                    <a href="" class="text">
+                        <p><sp:iterator value="specialData.articleList(1,1)"></p>  
+                    <p class="explain"><a href="<sp:property value='pageUri'/>/<sp:property value='publishUri'/>" title=" <sp:property value='title'/>" > <sp:property value="disUtil.subString(title,100,'..')"/> </a>
+                    </p>
+                    </sp:iterator> 
+                    </a>
+                </li>
+                <li class="article">
+                    <a href="" class="text">
+                        <p></p>
+                        <p class="explain"></p>
+                    </a>
+                </li>
+                <li class="article">
+                    <a href="" class="text">
+                        <p></p>
+                        <p class="explain"></p>
+                    </a>
+                </li>
+                <li class="article">
+                    <a href="" class="text">
+                        <p></p>
+                        <p class="explain"></p>
+                    </a>
+                </li>
+                <li class="article">
+                    <a href="" class="text">
+                        <p></p>
+                        <p class="explain"></p>
+                    </a>
+                </li>
+                <li class="article">
+                    <a href="" class="text">
+                        <p></p>
+                        <p class="explain"></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <span>??????????ƴ?????</span>
+    <br>
+    <span>Copyright by ?ܴ?? ??? ???</span>
+</div>
+</body>
+</html>
