@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="GBK">
+    <title>Title</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        img{
+            width:100%;
+            height:auto;
+        }
+        .nav{
+            position:relative;
+            height: 50px;
+            background-color: lightsteelblue;
+            filter:alpha(opacity=60);
+            -moz-opacity: 0.6;
+            opacity: 0.6;
+        }
+        .dao{
+            position:absolute;
+            bottom:0;
+            overflow: hidden;
+        }
+        .cai{
+            height:25px;
+            list-style-type: none;
+        }
+        .cai>li{
+            margin-left:100px;
+            font-size:1.5em;
+            font-weight:700;
+            display:inline;
+        }
+        .menu{
+            margin-left:100px;
+        }
+
+        .article1{
+            float: left;
+            margin-top: 10px;
+            margin-left:5%;
+            width: 68%;
+        }
+        .aside{
+            position:fixed;
+            right:0;
+            margin-top: 70px;
+            margin-right:5%;
+            background-color:#f2f2f2;
+            width: 20%;
+            height: 300px;
+            font-size:20px;
+        }
+        .clear{
+            clear:both;
+        }
+        .footer{
+            text-align: center;
+            margin-top:30px;
+            height: 50px;
+            background-color:lightsteelblue;
+            filter:alpha(opacity=60);
+            -moz-opacity: 0.6;
+            opacity: 0.6;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="nav">
+        <div class="dao">
+            <ul class="cai">
+                <li class="menu0">
+                    <a href="">俯视地球</a>
+                </li>
+                <li class="menu">
+                    <a href="">奔向月球</a>
+                </li>
+                <li class="menu">
+                    <a href="">登陆火星</a>
+                </li>
+                <li class="menu">
+                    <a href="">遨游太阳系</a>
+                </li>
+                <li class="menu">
+                    <a href="">飞向深空</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="article1">
+    </div>
+    <div class="aside"></div>
+    <p class="clear"></p>
+    <div class="footer">
+        <span>东大在线网络设计大赛二组</span>
+        <br>
+        <span>Copyright by 曹春榆 周子煜 张云轩</span>
+    </div>
+</div>
+</body>
+</html>
